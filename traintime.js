@@ -48,7 +48,7 @@ $("#add-train-btn").on("click", function() {
 
 trainData.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
-  console.log(childSnapShot.val());
+  console.log(childSnapshot.val());
 
   var tName = childSnapshot.val().name;
   var tDestination = childSnapshot.val().destination;
